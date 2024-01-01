@@ -1,0 +1,86 @@
+:any-link {
+  color: inherit;
+  display: inline-flex;
+}
+
+:focus {
+  text-shadow: 0 0 2ex;
+  box-shadow: 0 0 1ex 1ex;
+  outline: thick groove;
+  text-decoration-style: dotted;
+}
+
+:hover {
+  text-decoration-style: double;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: max(3ch, 4vmax + 1vmin);
+  line-height: 1.5;
+}
+
+body {
+  margin: 1ch;
+  overflow-wrap: anywhere;
+}
+
+article {
+  contain: layout;
+  padding: 1ch;
+}
+
+nav {
+  contain: layout;
+  display: flex;
+  flex-flow: column;
+  font-size: 1.236em;
+  margin-block: 1rem;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+nav a {
+  padding-inline: 1ch;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-weight: unset;
+  margin: 0;
+  margin-inline-end: 1em;
+  float: right;
+  writing-mode: vertical-rl;
+}
+
+p {
+  display: flex;
+  flex-flow: column;
+  float: right;
+  font-family: sans-serif;
+  margin: 2em 0;
+  padding: 1em;
+}
+
+em {
+  font-family: monospace;
+}
+
+::first-letter {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+@media (orientation: portrait) {
+  nav {
+    clear: both;
+    writing-mode: sideways-rl;
+  }
+}
+
+.shift {
+  margin-left: -1ch;
+}

@@ -1,0 +1,29 @@
+<svg class="yffi" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 1000">
+  <style media="(color)">
+    :root { --iffy:darkviolet; --yffi:lemonchiffon }
+    .iffy * { background-color:transparent; color:unset }
+    .yffi * { background-color:transparent; color:unset }
+    .iffy { fill:var(--iffy); stroke:var(--yffi) }
+    .yffi { fill:var(--yffi); stroke:var(--iffy) }
+    .iffy.iffy { background-color:var(--iffy); color:var(--yffi) }
+    .yffi.yffi { background-color:var(--yffi); color:var(--iffy) }
+    .iffy ::selection { color:var(--iffy); background:aquamarine }
+    .yffi ::selection { color:var(--yffi); background:dodgerblue }
+    .ffiy { filter: hue-rotate(288deg) }
+    .ffyi { filter: hue-rotate(18deg) }
+    .yiff { filter: hue-rotate(-18deg) }
+    .iyff { filter: hue-rotate(-288deg) }
+    @media (prefers-color-scheme:dark) {:root { --yffi:khaki }}
+    @media (prefers-contrast:more) {:root { --iffy:indigo }}
+    @media (prefers-contrast:less) {:root { --yffi:peachpuff }}
+  </style>
+  <title>iffy</title>
+  <rect class="iffy ffyi" width="80%" height="30%" x="0" y="0%" />
+  <rect class="yffi ffiy" width="80%" height="30%" x="0" y="30%" />
+  <rect class="iffy yiff" width="80%" height="30%" x="0" y="50%" />
+  <rect class="yffi iyff" width="80%" height="30%" x="0" y="70%" />
+  <rect class="yffi ffyi" width="20%" height="30%" x="80%" y="0%" />
+  <rect class="iffy ffiy" width="20%" height="30%" x="80%" y="30%" />
+  <rect class="yffi yiff" width="20%" height="30%" x="80%" y="50%" />
+  <rect class="iffy iyff" width="20%" height="30%" x="80%" y="70%" />
+</svg>

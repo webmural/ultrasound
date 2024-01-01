@@ -1,0 +1,20 @@
+/*
+iffy https://s9a.page/violet remix yo)
+*/
+
+:root { --iffy:darkviolet; --yffi:lemonchiffon }
+.iffy * { background-color:transparent; color:unset }
+.yffi * { background-color:transparent; color:unset }
+.iffy { fill:var(--iffy); stroke:var(--yffi) }
+.yffi { fill:var(--yffi); stroke:var(--iffy) }
+.iffy.iffy { background-color:var(--iffy); color:var(--yffi) }
+.yffi.yffi { background-color:var(--yffi); color:var(--iffy) }
+.iffy ::selection { color:var(--iffy); background:aquamarine }
+.yffi ::selection { color:var(--yffi); background:dodgerblue }
+.ffiy { filter: hue-rotate(288deg) }
+.ffyi { filter: hue-rotate(18deg) }
+.yiff { filter: hue-rotate(-18deg) }
+.iyff { filter: hue-rotate(-288deg) }
+@media (prefers-color-scheme:dark) {:root { --yffi:khaki }}
+@media (prefers-contrast:more) {:root { --iffy:indigo }}
+@media (prefers-contrast:less) {:root { --yffi:peachpuff }}
